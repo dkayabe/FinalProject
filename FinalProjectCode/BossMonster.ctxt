@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=
+comment0.target=BossMonster()
+comment0.text=\n\ Constructor\ for\ objects\ of\ class\ BossMonster\n
+comment1.params=normalmonsterhealth\ normalmonsterspeed
+comment1.target=void\ split(int,\ int)
+comment1.text=\n\ \n\ This\ will\ make\ it\ so\ when\ a\ boss\ monster\ dies\ it\ splits\ up\ into\ 4\ normal\ monsters\n
+comment2.params=
+comment2.target=void\ move()
+comment2.text=\n\ \n\ This\ makes\ the\ boss\ mob\ move\n
+numComments=3
