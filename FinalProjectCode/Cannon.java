@@ -12,6 +12,8 @@ public class Cannon extends Tower
     private double radius;
     private double width;
     private double height;
+    private Color color;
+
     /**
      * Constructor for objects of class Cannon
      */
@@ -20,10 +22,15 @@ public class Cannon extends Tower
         super(damage, cost, xPos, yPos);
         this.radius = radius;
         width = 10;
-        height = 30;
+        height = 40;
     }
     
     public void draw(Graphics g) {
-        
+        g.setColor(Color.YELLOW);
+        g.fillOval((int)(xPos), (int)(yPos), (int)(width * 3), (int)(width * 3));
+        g.setColor(Color.GRAY);
+        g.fillRect((int)(xPos - 5), (int)(yPos - 40), (int)(width), (int)(height));
     }
+    
+    
 }
