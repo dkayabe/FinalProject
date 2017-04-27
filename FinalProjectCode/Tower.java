@@ -16,7 +16,10 @@ public abstract class Tower
      */
     public Tower(int d, int c, double xPos, double yPos)
     {
-        
+        damage = d;
+        cost = c;
+        this.xPos = xPos;
+        this.yPos = yPos;
         
     }
     

@@ -22,14 +22,14 @@ public class Cannon extends Tower
         super(damage, cost, xPos, yPos);
         this.radius = radius;
         width = 10;
-        height = 40;
+        height = 30;
     }
     
     public void draw(Graphics g) {
         g.setColor(Color.YELLOW);
-        g.fillOval((int)(xPos), (int)(yPos), (int)(width * 3), (int)(width * 3));
+        g.fillOval((int)(xPos), (int)(yPos), (int)(radius), (int)(radius));
         g.setColor(Color.GRAY);
-        g.fillRect((int)(xPos - 5), (int)(yPos - 40), (int)(width), (int)(height));
+        g.fillRect((int)(xPos + 10), (int)(yPos - 15), (int)(width), (int)(height));
     }
     
     
