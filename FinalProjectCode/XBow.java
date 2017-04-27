@@ -16,7 +16,7 @@ public class XBow extends Tower
     public XBow()
     {
         // initialise instance variables
-        
+        //range = 210
     }
 
 }

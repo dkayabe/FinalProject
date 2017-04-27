@@ -18,7 +18,7 @@ public class TestTower extends Applet
    public void init() {
       setBackground (Color.black);
       setSize (APPLET_WIDTH, APPLET_HEIGHT);
-      c1 = new Cannon(400, 400, 30, 300, 300);
+      c1 = new Cannon(400, 200, 300, 300);
     }
    
    public void paint (Graphics page) {
@@ -26,4 +26,6 @@ public class TestTower extends Applet
        
       
     }
+    
+    
 }
