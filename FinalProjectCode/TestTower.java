@@ -12,18 +12,19 @@ public class TestTower extends Applet
    private final int APPLET_HEIGHT = 600;
    
     
-    
+   //new towers
    private Cannon c1;
-   
+   private XBow x1;
    public void init() {
-      setBackground (Color.black);
+      setBackground (Color.BLUE);
       setSize (APPLET_WIDTH, APPLET_HEIGHT);
       c1 = new Cannon(400, 200, 300, 300);
+      x1 = new XBow(200, 400, 200, 200);
     }
    
    public void paint (Graphics page) {
        c1.draw(page);
-       
+       x1.draw(page);
       
     }
     

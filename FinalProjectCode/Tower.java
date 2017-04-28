@@ -41,6 +41,6 @@ public abstract class Tower
     }
     
     public abstract void draw(Graphics g);
-    public abstract void target(double x, double y);
+    public abstract boolean target(double x, double y);
     public abstract int upgrade(int money);
 }

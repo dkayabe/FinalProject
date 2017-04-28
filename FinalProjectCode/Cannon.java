@@ -10,11 +10,12 @@ public class Cannon extends Tower
 {
     // instance variables - replace the example below with your own
     private double radius;
-    private double width;
-    private double height;
+    
     private Color color;
     private boolean upgraded = false;
+
     private double range;
+    private double distance;
 
     /**
      * Constructor for objects of class Cannon
@@ -23,8 +24,7 @@ public class Cannon extends Tower
     {
         super(damage, cost, xPos, yPos);
         radius = 30;
-        width = 10;
-        height = 30;
+        
         range = 180;
         
         color = Color.YELLOW;
@@ -33,12 +33,17 @@ public class Cannon extends Tower
     public void draw(Graphics g) {
         g.setColor(color);
         g.fillOval((int)(xPos), (int)(yPos), (int)(radius), (int)(radius));
-        g.setColor(Color.GRAY);
-        g.fillRect((int)(xPos + 10), (int)(yPos - 15), (int)(width), (int)(height));
     }
     
-    public void target(double x, double y) {
+    public boolean target(double x, double y) {
+        distance = Math.sqrt(Math.pow((xPos - x), 2) + Math.pow((yPos - y), 2));
         
+        if (distance <= range) {
+            return true;
+        }
+        else {
+            return false;
+        }
     }
     
     public int upgrade(int money) {
