@@ -36,7 +36,7 @@ public class InfernoRifleBestie
     
     public void paintComponent(Graphics g) {
         g2 = (Graphics2D) g;
-        BufferedImage imgj = null;
+        BufferedImage img = null;
         try {
             URL url = new URL("inferno_rifle_bestie.gif");
             img = img = ImageIO.read(url);
