@@ -1,7 +1,0 @@
-#BlueJ class context
-comment0.params=
-comment0.target=Game()
-comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ Game\r\n
-comment1.params=currency
-comment1.target=void\ setMoney(int)
-numComments=2
