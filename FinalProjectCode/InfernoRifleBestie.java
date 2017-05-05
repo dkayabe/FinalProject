@@ -12,6 +12,25 @@ import java.awt.*;
 import java.io.*;
 import javax.imageio.ImageIO;
 import javax.swing.*;
+import java.awt.image.BufferedImage;
+
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.EventQueue;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.LinearGradientPaint;
+import java.awt.Point;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
+import javax.imageio.ImageIO;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.UIManager;
+import javax.swing.UnsupportedLookAndFeelException;
+
 /**
  * Write a description of class InfernoRifleBestie here.
  * 
@@ -31,27 +50,28 @@ public class InfernoRifleBestie extends JPanel
     private BufferedImage img;
     
     private ImageIcon hero;
+    
     /**
      * Constructor for objects of class InfernoRifleBestie
      */
-    public InfernoRifleBestie()
+    public InfernoRifleBestie(int x, int y)
     {
         hero = new ImageIcon("InfernoRifleBestie.PNG");
-        x = 40;
-        y = 60;
+        this.x = x;
+        this.y = y;
+        
     }
     
     public void paintComponent(Graphics g) {
         g2 = (Graphics2D) g;
         
         try {
-            URL url = new URL("inferno_rifle_bestie.gif");
-            img = img = ImageIO.read(url);
+            img = ImageIO.read(new File("images/InfernoRifleBestie.png"));
         }
         catch (Exception e) {
             
         }
-        g2.drawImage(hero5, 5, this);
+        g2.drawImage(img, x, y, null);
     }
     
     public void move() {

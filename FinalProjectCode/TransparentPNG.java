@@ -47,7 +47,7 @@ public class TransparentPNG {
 
         public TestPane() {
             try {
-                img = ImageIO.read(new File("BraveFrontierBestie.png"));
+                img = ImageIO.read(new File("images/BraveFrontierBestie.png"));
             } catch (IOException ex) {
                 ex.printStackTrace();
             }
