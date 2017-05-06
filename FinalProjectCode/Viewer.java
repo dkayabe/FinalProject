@@ -8,22 +8,27 @@ import javax.swing.JFrame;
  */
 public class Viewer
 {
-    public static void main(String[] args) {
+    final static int ANIMATION_TIME_IN_SECONDS = 30;
+    public static void main(String[] args)throws InterruptedException {
         JFrame frame = new JFrame();
         frame.setSize(1000, 1000);
         frame.setTitle("Inferno Rifle Bestie");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         
-        InfernoRifleBestie h1 = new InfernoRifleBestie(200,100);
-
-
+        InfernoRifleBestie h1 = new InfernoRifleBestie(250,200);
+        frame.add(h1);
         
-        InfernoRifleBestie[] heroes = {h1};
-        for (InfernoRifleBestie h:heroes) {
-            frame.add(h);
+        /*
+        for( int seconds = 0; seconds < ANIMATION_TIME_IN_SECONDS; seconds++ )
+        {
+            h1.attack();
+            
+            Thread.sleep( 100 );
             frame.setVisible(true);
+            
         }
-        
+        */
+
         frame.setVisible(true);
     }
 }
