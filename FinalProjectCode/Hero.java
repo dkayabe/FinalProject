@@ -1,7 +1,7 @@
 
 public interface Hero
 {
-    public void ShowImage();
+    
     
     public void setHealth(int health);
     
