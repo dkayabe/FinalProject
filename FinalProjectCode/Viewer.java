@@ -15,20 +15,33 @@ public class Viewer
         frame.setTitle("Inferno Rifle Bestie");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         
+        //new heroes
         InfernoRifleBestie h1 = new InfernoRifleBestie(250,200);
+        //ChiefPat c1 = new ChiefPat(700,0);
+        
         frame.add(h1);
 		
+        frame.setVisible(true);
         
-        /*
+        //goes forward
         for( int seconds = 0; seconds < ANIMATION_TIME_IN_SECONDS; seconds++ )
         {
-            h1.attack();
+            h1.moveLeft();
             
-            Thread.sleep( 100 );
+            Thread.sleep(50);
             frame.setVisible(true);
             
         }
-        */
+        Thread.sleep(1000);
+        //goes back
+        for( int seconds = 0; seconds < ANIMATION_TIME_IN_SECONDS; seconds++ )
+        {
+            h1.moveRight();
+            
+            Thread.sleep(50);
+            frame.setVisible(true);
+            
+        }
 
         frame.setVisible(true);
     }
