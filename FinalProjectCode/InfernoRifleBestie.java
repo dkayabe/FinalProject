@@ -62,7 +62,7 @@ public class InfernoRifleBestie extends JPanel
         
     }
     
-    public void paintComponent(Graphics g) {
+    public void draw(Graphics g) {
         g2 = (Graphics2D) g;
         
         try {
@@ -72,6 +72,7 @@ public class InfernoRifleBestie extends JPanel
             
         }
         g2.drawImage(img, x, y, null);
+		//g2.dispose();
     }
     
     public void move() {

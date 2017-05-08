@@ -17,6 +17,7 @@ public class Viewer
         
         InfernoRifleBestie h1 = new InfernoRifleBestie(250,200);
         frame.add(h1);
+		
         
         /*
         for( int seconds = 0; seconds < ANIMATION_TIME_IN_SECONDS; seconds++ )
