@@ -37,7 +37,7 @@ import javax.swing.UnsupportedLookAndFeelException;
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class InfernoRifleBestie extends JPanel
+public class InfernoRifleBestie extends JComponent
 {
     // instance variables - replace the example below with your own
     Graphics2D g2;
@@ -49,35 +49,36 @@ public class InfernoRifleBestie extends JPanel
     private Image image;
     private BufferedImage img;
     
-    private ImageIcon hero;
+    
     
     /**
      * Constructor for objects of class InfernoRifleBestie
      */
     public InfernoRifleBestie(int x, int y)
     {
-        hero = new ImageIcon("InfernoRifleBestie.PNG");
+        
         this.x = x;
         this.y = y;
         
-    }
-    
-    public void draw(Graphics g) {
-        g2 = (Graphics2D) g;
-        
         try {
-            img = ImageIO.read(new File("images/InfernoRifleBestie.png"));
+            img = ImageIO.read(new File("Images/InfernoRifleBestie.png"));
         }
-        catch (Exception e) {
+        catch (IOException e) {
             
         }
-        g2.drawImage(img, x, y, null);
-		//g2.dispose();
+    }
+    
+    @Override
+    protected void paintComponent(Graphics g) {
+        super.paintComponent(g);
+        g.drawImage(img, x, y, 200, 119, this);
+        
     }
     
     public void move() {
         x += dx;
         y += dy;
+        
     }
 
     public int getX() {
@@ -91,6 +92,19 @@ public class InfernoRifleBestie extends JPanel
     public Image getImage() {
         return image;
     }
-
+    
+    public void moveLeft() {
+        x -= 5;
+        
+        repaint();
+    }
+    
+    public void moveRight() {
+        x += 5;
+        
+        repaint();
+    }
+    
+    
 }
 
