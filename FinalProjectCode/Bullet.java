@@ -26,10 +26,9 @@ public class Bullet
         x = 0;
     }
     
-    @Override
+    
     protected void paintComponent(Graphics g) {
-        super.paintComponent(g);
-        g.drawImage(img, x, y, 200, 119, this);
+        
         
     }
 }
