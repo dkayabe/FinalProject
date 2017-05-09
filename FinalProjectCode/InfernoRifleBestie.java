@@ -10,6 +10,7 @@ import java.io.File;
 import java.io.IOException;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
+import java.awt.geom.Line2D;
 //import javax.swing.UIManager;
 //import javax.swing.UnsupportedLookAndFeelException;
 
@@ -86,6 +87,35 @@ public class InfernoRifleBestie extends JComponent
         hp -= incDmg;
     }
     
+    public void machineGun(Graphics g) throws InterruptedException{
+        g2 = (Graphics2D) g;
+        int newX = x - 10;
+        
+        Line2D.Double b1 = new Line2D.Double(newX, y, x, y);
+        Line2D.Double b2 = new Line2D.Double(newX, y, x, y);
+        Line2D.Double b3 = new Line2D.Double(newX, y, x, y);
+        Line2D.Double b4 = new Line2D.Double(newX, y, x, y);
+        Line2D.Double b5 = new Line2D.Double(newX, y, x, y);
+        
+        
+        Line2D[] bullets = {b1, b2, b3, b4, b5};
+        g2.setColor(Color.YELLOW);
+        for (Line2D line:bullets) {
+            g2.draw(line);
+            for (int i = 0; i < 30; i++) {
+                newX -= 5;
+                repaint();
+                Thread.sleep(1);
+            }
+            repaint();
+            Thread.sleep(10);
+        }
+        
+        repaint();
+    }
     
+    public void rocketBurst(Graphics g) {
+        g2 = (Graphics2D) g;
+    }
 }
 
