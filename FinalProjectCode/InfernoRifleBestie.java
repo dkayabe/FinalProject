@@ -29,6 +29,8 @@ public class InfernoRifleBestie extends JComponent
     private int y;
     
     private BufferedImage img;
+    private BufferedImage rocketdown;
+    private BufferedImage rocketleft;
     
     private int hp;
     private int atk;
@@ -44,8 +46,26 @@ public class InfernoRifleBestie extends JComponent
         
         this.x = x;
         this.y = y;
+        
+        //the hero
         try {
             img = ImageIO.read(new File("Images/InfernoRifleBestie.png"));
+        }
+        catch (IOException e) {
+            
+        }
+        
+        //the rocket facing down
+        try {
+            img = ImageIO.read(new File("Images/rocketdown.png"));
+        }
+        catch (IOException e) {
+            
+        }
+        
+        //the rocket facing left
+        try {
+            img = ImageIO.read(new File("Images/rocketleft.png"));
         }
         catch (IOException e) {
             
@@ -116,6 +136,7 @@ public class InfernoRifleBestie extends JComponent
     
     public void rocketBurst(Graphics g) {
         g2 = (Graphics2D) g;
+        //g.drawImage(
     }
 }
 
