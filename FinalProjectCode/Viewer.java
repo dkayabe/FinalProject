@@ -31,12 +31,12 @@ public class Viewer
         
         Bullet[] bullets = {b1, b2, b3, b4, b5};
         
-        //ChiefPat c1 = new ChiefPat(700,0);
         
         AutonomousCotton ct1 = new AutonomousCotton(0,0);
         frame.add(ct1);
         frame.setVisible(true);
-        
+        frame.add(c1);
+        frame.setVisible(true);
         frame.add(h1);
         frame.setVisible(true);
         
@@ -44,7 +44,7 @@ public class Viewer
         for( int i = 0; i < ANIMATION_TIME_IN_SECONDS; i++ )
         {
             h1.moveLeft();
-            
+            c1.move();
             Thread.sleep(50);
             frame.setVisible(true);
             

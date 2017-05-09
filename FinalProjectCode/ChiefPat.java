@@ -27,7 +27,7 @@ import javax.swing.UnsupportedLookAndFeelException;
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class ChiefPat implements Hero
+public class ChiefPat extends JComponent
 {
    
     private int health = 10000;
@@ -36,10 +36,9 @@ public class ChiefPat implements Hero
     private int dy;
     private int x;
     private int y;
-    try
-    private BufferedImage pat = (ImageIO.read(new File("Images/ChiefPat.png")));
-    private int w = pat.getWidth(null);
-    private int h = pat.getHeight(null);
+    private BufferedImage pat;
+  
+  
     
    
     
@@ -48,6 +47,12 @@ public class ChiefPat implements Hero
     {
         x = X;
         y = Y;
+        try{
+        pat = (ImageIO.read(new File("Images/ChiefPat.png")));
+       }
+       catch (IOException e) {
+            
+       }
     }
     
     public void setHealth(int health)
@@ -68,7 +73,11 @@ public class ChiefPat implements Hero
     {
         return damage;
     }
-    
+    protected void paintComponent(Graphics g) {
+        super.paintComponent(g);
+        g.drawImage(pat, x, y, 20, 40, this);
+        
+    }
     public int getHealth()
     {
         return health;
@@ -77,8 +86,8 @@ public class ChiefPat implements Hero
    
     public void move()
     {
-        
-        
+        x -= 5;
+        repaint();
     }
     
     public void showHealthBar()
@@ -87,11 +96,7 @@ public class ChiefPat implements Hero
         
     }
     
-    public void moveLeft(Graphics g){
-        x += 5;
-        
-        
-    }
+   
     
     public int getX()
     {
