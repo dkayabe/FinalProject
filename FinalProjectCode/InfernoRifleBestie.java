@@ -42,13 +42,13 @@ public class InfernoRifleBestie extends JComponent
     // instance variables - replace the example below with your own
     Graphics2D g2;
     
-    private int dx;
-    private int dy;
     private int x;
     private int y;
-    private Image image;
+    
     private BufferedImage img;
     
+    private int hp;
+    private int atk;
     
     
     /**
@@ -56,10 +56,11 @@ public class InfernoRifleBestie extends JComponent
      */
     public InfernoRifleBestie(int x, int y)
     {
+        hp = 10000;
+        atk = 5000;
         
         this.x = x;
         this.y = y;
-        
         try {
             img = ImageIO.read(new File("Images/InfernoRifleBestie.png"));
         }
@@ -74,12 +75,6 @@ public class InfernoRifleBestie extends JComponent
         g.drawImage(img, x, y, 200, 119, this);
         
     }
-    
-    public void move() {
-        x += dx;
-        y += dy;
-        
-    }
 
     public int getX() {
         return x;
@@ -89,8 +84,8 @@ public class InfernoRifleBestie extends JComponent
         return y;
     }
 
-    public Image getImage() {
-        return image;
+    public BufferedImage getImage() {
+        return img;
     }
     
     public void moveLeft() {
@@ -103,6 +98,10 @@ public class InfernoRifleBestie extends JComponent
         x += 5;
         
         repaint();
+    }
+    
+    public void takeDamage(int incDmg) {
+        hp -= incDmg;
     }
     
     

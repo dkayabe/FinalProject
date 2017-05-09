@@ -12,23 +12,41 @@ import javax.swing.JComponent;
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Bullet
+public class Bullet extends JComponent
 {
     /** description of instance variable x (add comment for each instance variable) */
     private int x;
-
+    private int y;
+    private int distance;
+    Graphics2D g2;
     /**
      * Default constructor for objects of class Bullet
      */
-    public Bullet()
+    public Bullet(int x, int y)
     {
-        // initialise instance variables
-        x = 0;
+        this.x = x;
+        this.y = y;
+        distance = 10;
     }
     
     
-    protected void paintComponent(Graphics g) {
+    public void paintComponent(Graphics g) {
+        g2 = (Graphics2D) g;
         
+        //draw bullet
+        Line2D.Double bullet = new Line2D.Double(x - distance, y, x, y);
+        g2.setColor(Color.YELLOW);
+        g2.draw(bullet);
+        repaint();
         
     }
+    
+    public void movement() {
+        
+        x -= 1;
+        repaint();
+        
+    }
+    
+    
 }
