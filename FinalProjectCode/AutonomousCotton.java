@@ -1,4 +1,3 @@
-
 import java.awt.*;
 import java.io.*;
 import javax.imageio.ImageIO;
@@ -10,16 +9,13 @@ import java.io.File;
 import java.io.IOException;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
-//import javax.swing.UIManager;
-//import javax.swing.UnsupportedLookAndFeelException;
-
 /**
- * Write a description of class InfernoRifleBestie here.
+ * Write a description of class AutonomousCotton here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class InfernoRifleBestie extends JComponent
+public class AutonomousCotton extends JComponent
 {
     // instance variables - replace the example below with your own
     Graphics2D g2;
@@ -31,20 +27,20 @@ public class InfernoRifleBestie extends JComponent
     
     private int hp;
     private int atk;
-    
-    
+
     /**
-     * Constructor for objects of class InfernoRifleBestie
+     * Constructor for objects of class AutonomousCotton
      */
-    public InfernoRifleBestie(int x, int y)
+    public AutonomousCotton(int x, int y)
     {
-        hp = 10000;
-        atk = 5000;
+        hp = 500000;
+        atk = 2000;
         
         this.x = x;
         this.y = y;
+        
         try {
-            img = ImageIO.read(new File("Images/InfernoRifleBestie.png"));
+            img = ImageIO.read(new File("Images/AutonomousCotton.png"));
         }
         catch (IOException e) {
             
@@ -54,38 +50,11 @@ public class InfernoRifleBestie extends JComponent
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
-        g.drawImage(img, x, y, 200, 119, this);
+        g.drawImage(img, x, y, 360, 155, this);
         
-    }
-
-    public int getX() {
-        return x;
-    }
-
-    public int getY() {
-        return y;
-    }
-
-    public BufferedImage getImage() {
-        return img;
-    }
-    
-    public void moveLeft() {
-        x -= 5;
-        
-        repaint();
-    }
-    
-    public void moveRight() {
-        x += 5;
-        
-        repaint();
     }
     
     public void takeDamage(int incDmg) {
         hp -= incDmg;
     }
-    
-    
 }
-

@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.params=x\ y
+comment0.target=AutonomousCotton(int,\ int)
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ AutonomousCotton\r\n
+comment1.params=g
+comment1.target=void\ paintComponent(java.awt.Graphics)
+comment2.params=incDmg
+comment2.target=void\ takeDamage(int)
+numComments=3

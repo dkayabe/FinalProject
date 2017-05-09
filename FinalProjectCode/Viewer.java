@@ -33,8 +33,11 @@ public class Viewer
         
         //ChiefPat c1 = new ChiefPat(700,0);
         
-        frame.add(h1);
+        AutonomousCotton ct1 = new AutonomousCotton(0,0);
+        frame.add(ct1);
+        frame.setVisible(true);
         
+        frame.add(h1);
         frame.setVisible(true);
         
         //goes forward
