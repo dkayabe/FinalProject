@@ -4,4 +4,5 @@ comment0.target=MachineGun(int,\ int)
 comment0.text=\r\n\ Default\ constructor\ for\ objects\ of\ class\ MachineGun\r\n
 comment1.params=g
 comment1.target=void\ paintComponent(java.awt.Graphics)
+comment1.text=\r\n\ paintComponent()\r\n\ draws\ 5\ bullets\ shooting\ fast\r\n\ @param\ Graphics\ g\r\n
 numComments=2

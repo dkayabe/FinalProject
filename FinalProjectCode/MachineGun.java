@@ -50,7 +50,11 @@ public class MachineGun extends JComponent
         
     }
 
-    
+    /**
+     * paintComponent()
+     * draws 5 bullets shooting fast
+     * @param Graphics g
+     */
     public void paintComponent(Graphics g){
         g2 = (Graphics2D) g;
         g2.setColor(Color.YELLOW);

@@ -30,7 +30,7 @@ public class InfernoRifleBestie extends JComponent
     
     private BufferedImage img;
     private BufferedImage rocketdown;
-    private BufferedImage rocketleft;
+
     
     private int hp;
     private int atk;
@@ -63,13 +63,6 @@ public class InfernoRifleBestie extends JComponent
             
         }
         
-        //the rocket facing left
-        try {
-            img = ImageIO.read(new File("Images/rocketleft.png"));
-        }
-        catch (IOException e) {
-            
-        }
     }
     
     @Override
