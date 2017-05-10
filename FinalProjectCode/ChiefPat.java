@@ -75,7 +75,7 @@ public class ChiefPat extends JComponent
     }
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
-        g.drawImage(pat, x, y, 20, 40, this);
+        g.drawImage(pat, x, y, 250, 200, this);
         
     }
     public int getHealth()
@@ -84,9 +84,10 @@ public class ChiefPat extends JComponent
         
     }
    
-    public void move()
+    public void MoveToEnemy(int EnemyX, int EnemyY)
     {
-        x -= 5;
+        x += (int)((EnemyX-x)/10)  ;
+        y += (int)((EnemyY-y)/10) ;
         repaint();
     }
     

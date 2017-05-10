@@ -1,41 +1,84 @@
+import java.awt.*;
+import java.io.*;
+import javax.imageio.ImageIO;
+import javax.swing.*;
+import java.awt.image.BufferedImage;
 
-
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.EventQueue;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.LinearGradientPaint;
+import java.awt.Point;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
+import javax.imageio.ImageIO;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.UIManager;
+import javax.swing.UnsupportedLookAndFeelException;
 /**
- * Write a description of class Zap here.
+ * Write a description of class ChiefPat here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Zap
+public class Zap extends JComponent
 {
-    /** description of instance variable x (add comment for each instance variable) */
+   
+ 
+    private int dy;
     private int x;
     private int y;
-    private BufferedImage pat;
+    private BufferedImage zap;
+  
+  
+    
+   
+    
 
-    /**
-     * Default constructor for objects of class Zap
-     */
-    public Zap()
+    public Zap(int X, int Y)
     {
-       
+        x = X;
+        y = Y;
+        try{
+        zap = (ImageIO.read(new File("Images/Zap.png")));
+       }
+       catch (IOException e) {
+            
+       }
     }
-
-    /**
-     * An example of a method - replace this comment with your own
-     *    that describes the operation of the method
-     *
-     * @pre        preconditions for the method
-     *            (what the method assumes about the method's parameters and class's state)
-     * @post    postconditions for the method
-     *            (what the method guarantees upon completion)
-     * @param    y    description of parameter y
-     * @return    description of the return value
-     */
-    public int sampleMethod(int y)
+    
+    
+    
+    protected void paintComponent(Graphics g) {
+        super.paintComponent(g);
+        g.drawImage(zap, x, y, 250, 200, this);
+        
+    }
+    
+   
+    public void MoveToEnemy(int EnemyX, int EnemyY)
     {
-        // put your code here
-        return x+y;
+        x += (int)((EnemyX-x)/10)  ;
+        y += (int)((EnemyY-y)/10) ;
+        repaint();
     }
-
+    
+   
+    
+   
+    
+    public int getX()
+    {
+        return x;
+    }
+    
+    public int getY()
+    {
+        return y;
+    }
 }
