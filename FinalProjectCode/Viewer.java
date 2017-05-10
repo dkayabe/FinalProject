@@ -31,6 +31,7 @@ public class Viewer
         
         Bullet[] bullets = {b1, b2, b3, b4, b5};
         
+        ChiefPat c1 = new ChiefPat(390,220);
         
         AutonomousCotton ct1 = new AutonomousCotton(0,0);
         frame.add(ct1);
