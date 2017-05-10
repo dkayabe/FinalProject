@@ -21,6 +21,10 @@ public class Viewer
         
         //new heroes
         InfernoRifleBestie h1 = new InfernoRifleBestie(x,y);
+        AutonomousCotton ct1 = new AutonomousCotton(100,100);
+        
+        //moves
+        MachineGun mg1 = new MachineGun(350,200);
         
         //bullets
         Bullet b1 = new Bullet(x + 40, y + 250);
@@ -33,10 +37,10 @@ public class Viewer
         
         ChiefPat c1 = new ChiefPat(390,220);
         
-        AutonomousCotton ct1 = new AutonomousCotton(0,0);
+        
         frame.add(ct1);
         frame.setVisible(true);
-        frame.add(c1);
+
         frame.setVisible(true);
         frame.add(h1);
         frame.setVisible(true);
@@ -44,38 +48,24 @@ public class Viewer
         //goes forward
         for( int i = 0; i < ANIMATION_TIME_IN_SECONDS; i++ )
         {
-            h1.moveLeft();
-            c1.move();
+            h1.moveLeft(100,100);
+
             Thread.sleep(50);
             frame.setVisible(true);
             
         }
         
-        //pauses a little
         Thread.sleep(500);
-        frame.add(b1);
-        frame.setVisible(true);
-        
-        //bullets
-        for (Bullet b:bullets) {
-            frame.add(b);
-            frame.setVisible(true);
-            for(int i = 0; i < 200; i++) {
-                b.movement();
-                frame.setVisible(true);
-                Thread.sleep(1);
-            }
-            frame.remove(b);
-            Thread.sleep(10);
-            
+        frame.add(mg1);
+        for (int i = 0; i < ANIMATION_TIME_IN_SECONDS; i++) {
+            mg1.attack();
         }
-        //pauses
-        Thread.sleep(500);
+        
         
         //goes back
         for( int i = 0; i < ANIMATION_TIME_IN_SECONDS; i++ )
         {
-            h1.moveRight();
+            h1.moveRight(100,100);
             
             Thread.sleep(50);
             frame.setVisible(true);

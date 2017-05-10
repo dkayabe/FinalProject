@@ -55,13 +55,7 @@ public class InfernoRifleBestie extends JComponent
             
         }
         
-        //the rocket facing down
-        try {
-            img = ImageIO.read(new File("Images/rocketdown.png"));
-        }
-        catch (IOException e) {
-            
-        }
+        
         
     }
     
@@ -84,14 +78,16 @@ public class InfernoRifleBestie extends JComponent
         return img;
     }
     
-    public void moveLeft() {
-        x -= 5;
+    public void moveLeft(int EnemyX, int EnemyY) {
+        x += (int)((EnemyX - x) / 70);
+        y += (int)((EnemyY - y) / 30) - 4;
         
         repaint();
     }
     
-    public void moveRight() {
-        x += 5;
+    public void moveRight(int EnemyX, int EnemyY) {
+        x -= (int)((EnemyX - x) / 70);
+        y -= (int)((EnemyY - y) / 30) - 4;
         
         repaint();
     }
@@ -100,36 +96,6 @@ public class InfernoRifleBestie extends JComponent
         hp -= incDmg;
     }
     
-    public void machineGun(Graphics g) throws InterruptedException{
-        g2 = (Graphics2D) g;
-        int newX = x - 10;
-        
-        Line2D.Double b1 = new Line2D.Double(newX, y, x, y);
-        Line2D.Double b2 = new Line2D.Double(newX, y, x, y);
-        Line2D.Double b3 = new Line2D.Double(newX, y, x, y);
-        Line2D.Double b4 = new Line2D.Double(newX, y, x, y);
-        Line2D.Double b5 = new Line2D.Double(newX, y, x, y);
-        
-        
-        Line2D[] bullets = {b1, b2, b3, b4, b5};
-        g2.setColor(Color.YELLOW);
-        for (Line2D line:bullets) {
-            g2.draw(line);
-            for (int i = 0; i < 30; i++) {
-                newX -= 5;
-                repaint();
-                Thread.sleep(1);
-            }
-            repaint();
-            Thread.sleep(10);
-        }
-        
-        repaint();
-    }
     
-    public void rocketBurst(Graphics g) {
-        g2 = (Graphics2D) g;
-        //g.drawImage(
-    }
 }
 

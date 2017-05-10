@@ -46,7 +46,7 @@ public class NuclearAirStrike extends JComponent
         g.drawImage(rocketdown, x, y, 300, 50, this);
     }
     
-    public void moveDown() throws InterruptedException{
+    public void attack() throws InterruptedException{
         for (int i = 0; i < 30; i++) {
             y += 5;
             repaint();

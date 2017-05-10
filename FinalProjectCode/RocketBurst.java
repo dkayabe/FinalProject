@@ -45,7 +45,7 @@ public class RocketBurst extends JComponent
         g.drawImage(rocketleft, x, y, 300, 50, this);
     }
     
-    public void moveLeft() throws InterruptedException{
+    public void attack() throws InterruptedException{
         for (int i = 0; i < 30; i++) {
             x -= 5;
             repaint();

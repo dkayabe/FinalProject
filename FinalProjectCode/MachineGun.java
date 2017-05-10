@@ -23,6 +23,7 @@ public class MachineGun extends JComponent
 
     Graphics2D g2;
     
+    
     Line2D.Double b1;
     Line2D.Double b2;
     Line2D.Double b3;
@@ -61,26 +62,30 @@ public class MachineGun extends JComponent
         
         for (Line2D line:bullets) {
             g2.draw(line);
-            for (int i = 0; i < 30; i++) {
-                x -= 5;
-                repaint();
-                try {
-                    Thread.sleep(1);
-                }
-                catch(InterruptedException ex) {
-                    Thread.currentThread().interrupt();
-                }
-            }
-            repaint();
-            try {
-                Thread.sleep(10);
-            }
-            catch(InterruptedException ex) {
-                Thread.currentThread().interrupt();
-            }
             
         }
         repaint();
     }
+    
+    public void attack() throws InterruptedException{
+        
+        for (Line2D line:bullets) {
+            
+            for (int i = 0; i < 30; i++) {
+                x -= 5;
+                repaint();
+                Thread.sleep(1);
+                }
+                
+            }
+        repaint();
+           
+           
+            
+            
+            
+        
 
+        
+    }
 }

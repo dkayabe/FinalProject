@@ -5,5 +5,5 @@ comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ NuclearStrike\r\n
 comment1.params=g
 comment1.target=void\ paintComponent(java.awt.Graphics)
 comment2.params=
-comment2.target=void\ moveDown()
+comment2.target=void\ attack()
 numComments=3
