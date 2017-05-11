@@ -2,6 +2,9 @@
 dependency1.from=Viewer
 dependency1.to=InfernoRifleBestie
 dependency1.type=UsesDependency
+dependency10.from=Viewer
+dependency10.to=NuclearAirStrike
+dependency10.type=UsesDependency
 dependency2.from=Viewer
 dependency2.to=Bullet
 dependency2.type=UsesDependency
@@ -14,47 +17,26 @@ dependency4.type=UsesDependency
 dependency5.from=Viewer
 dependency5.to=ChiefPat
 dependency5.type=UsesDependency
-dependency6.from=Viewer
-<<<<<<< HEAD
-dependency6.to=Fireball
-dependency6.type=UsesDependency
-dependency7.from=Viewer
-dependency7.to=RocketBurst
-dependency7.type=UsesDependency
-dependency8.from=Viewer
-dependency8.to=NuclearAirStrike
-dependency8.type=UsesDependency
-=======
+dependency6.from=ChiefPatTesting
 dependency6.to=ChiefPat
 dependency6.type=UsesDependency
-<<<<<<< HEAD
->>>>>>> origin/master
-=======
 dependency7.from=ChiefPatTesting
-dependency7.to=ChiefPat
+dependency7.to=AutonomousCotton
 dependency7.type=UsesDependency
-dependency8.from=ChiefPatTesting
-dependency8.to=AutonomousCotton
+dependency8.from=Viewer
+dependency8.to=Fireball
 dependency8.type=UsesDependency
->>>>>>> origin/master
+dependency9.from=Viewer
+dependency9.to=RocketBurst
+dependency9.type=UsesDependency
 objectbench.height=76
 objectbench.width=656
 package.editor.height=397
 package.editor.width=558
 package.editor.x=502
-<<<<<<< HEAD
-package.editor.y=45
-<<<<<<< HEAD
-package.numDependencies=8
-=======
-package.numDependencies=6
->>>>>>> origin/master
-package.numTargets=13
-=======
 package.editor.y=46
-package.numDependencies=8
+package.numDependencies=10
 package.numTargets=14
->>>>>>> origin/master
 package.showExtends=true
 package.showUses=true
 project.charset=windows-1252
@@ -71,14 +53,6 @@ target1.typeParameters=
 target1.width=120
 target1.x=40
 target1.y=100
-<<<<<<< HEAD
-target10.editor.height=700
-target10.editor.width=900
-target10.editor.x=356
-target10.editor.y=49
-target10.height=50
-target10.name=Fireball
-=======
 target10.appletHeight=500
 target10.appletWidth=500
 target10.editor.height=700
@@ -87,38 +61,26 @@ target10.editor.x=866
 target10.editor.y=305
 target10.height=50
 target10.name=MovingLabels
->>>>>>> origin/master
 target10.naviview.expanded=true
 target10.numberAppletParameters=0
 target10.showInterface=false
 target10.type=AppletTarget
 target10.typeParameters=
-<<<<<<< HEAD
-target10.width=80
-target10.x=40
-target10.y=250
-target11.editor.height=700
-target11.editor.width=900
-target11.editor.x=183
-target11.editor.y=72
-=======
 target10.width=100
 target10.x=400
 target10.y=110
-target11.editor.height=744
-target11.editor.width=1382
-target11.editor.x=-8
-target11.editor.y=-8
->>>>>>> origin/master
+target11.editor.height=700
+target11.editor.width=900
+target11.editor.x=0
+target11.editor.y=0
 target11.height=50
-target11.name=MachineGun
-target11.naviview.expanded=true
+target11.name=Fireball
 target11.showInterface=false
 target11.type=ClassTarget
 target11.typeParameters=
-target11.width=90
-target11.x=30
-target11.y=250
+target11.width=80
+target11.x=290
+target11.y=180
 target12.editor.height=700
 target12.editor.width=900
 target12.editor.x=183
@@ -169,21 +131,12 @@ target2.showInterface=false
 target2.type=ClassTarget
 target2.typeParameters=
 target2.width=80
-<<<<<<< HEAD
-target2.x=330
-target2.y=290
-target3.editor.height=788
-target3.editor.width=976
-target3.editor.x=-8
-target3.editor.y=0
-=======
 target2.x=300
 target2.y=300
 target3.editor.height=700
 target3.editor.width=900
 target3.editor.x=372
 target3.editor.y=112
->>>>>>> origin/master
 target3.height=50
 target3.name=ChiefPatTesting
 target3.naviview.expanded=true
