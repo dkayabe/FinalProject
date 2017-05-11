@@ -11,9 +11,11 @@ public class skywalker_viewer
         
         
         lukeskywalker hero = new lukeskywalker(200,200);
+        lukeskywalker enemy = new lukeskywalker(500,200);
         
         frame.add(hero);
-        
+        frame.setVisible(true);
+        frame.add(enemy);
         frame.setVisible(true);
         
         for(int i = 0; i<= 100;i++){
