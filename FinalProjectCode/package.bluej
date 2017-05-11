@@ -15,6 +15,7 @@ dependency5.from=Viewer
 dependency5.to=ChiefPat
 dependency5.type=UsesDependency
 dependency6.from=Viewer
+<<<<<<< HEAD
 dependency6.to=Fireball
 dependency6.type=UsesDependency
 dependency7.from=Viewer
@@ -23,13 +24,21 @@ dependency7.type=UsesDependency
 dependency8.from=Viewer
 dependency8.to=NuclearAirStrike
 dependency8.type=UsesDependency
+=======
+dependency6.to=ChiefPat
+dependency6.type=UsesDependency
+>>>>>>> origin/master
 objectbench.height=76
 objectbench.width=656
 package.editor.height=398
 package.editor.width=558
 package.editor.x=502
 package.editor.y=45
+<<<<<<< HEAD
 package.numDependencies=8
+=======
+package.numDependencies=6
+>>>>>>> origin/master
 package.numTargets=13
 package.showExtends=true
 package.showUses=true
@@ -137,6 +146,10 @@ target4.typeParameters=
 target4.width=100
 target4.x=30
 target4.y=320
+target5.editor.height=700
+target5.editor.width=900
+target5.editor.x=542
+target5.editor.y=65
 target5.height=50
 target5.name=skywalker_viewer
 target5.showInterface=false
