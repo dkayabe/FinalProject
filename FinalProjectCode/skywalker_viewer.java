@@ -30,7 +30,7 @@ public class skywalker_viewer
             Thread.sleep(17);
         }
         
-    
+        System.out.println();
     }
   
 }
