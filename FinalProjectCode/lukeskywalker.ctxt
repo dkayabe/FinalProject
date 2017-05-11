@@ -1,8 +1,10 @@
 #BlueJ class context
 comment0.params=posx\ posy
 comment0.target=lukeskywalker(int,\ int)
-comment1.params=
-comment1.target=void\ moveRight()
-comment2.params=g
-comment2.target=void\ paintComponent(java.awt.Graphics)
-numComments=3
+comment1.params=enemyX\ enemyY
+comment1.target=void\ moveToEnemy(int,\ int)
+comment2.params=
+comment2.target=void\ moveBack()
+comment3.params=g
+comment3.target=void\ paintComponent(java.awt.Graphics)
+numComments=4
