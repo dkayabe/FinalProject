@@ -11,28 +11,28 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 
 /**
- * Write a description of class RocketBurst here.
+ * Write a description of class Fireball here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class RocketBurst extends JComponent
+public class Fireball extends JComponent
 {
-    // instance variables - replace the example below with your own
+    /** description of instance variable x (add comment for each instance variable) */
     private int x;
     private int y;
     
-    private BufferedImage rocketleft;
+    private BufferedImage fireball;
     /**
-     * Constructor for objects of class RocketBurst
+     * Default constructor for objects of class Fireball
      */
-    public RocketBurst(int x, int y)
+    public Fireball(int x, int y)
     {
         this.x = x;
         this.y = y;
         
         try {
-            rocketleft = ImageIO.read(new File("Images/rocketleft.png"));
+            fireball = ImageIO.read(new File("Images/Fireball.png"));
         }
         catch (IOException e) {
             
@@ -42,12 +42,12 @@ public class RocketBurst extends JComponent
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
-        g.drawImage(rocketleft, x, y, 300, 50, this);
+        g.drawImage(fireball, x, y, 300, 50, this);
     }
     
     public void attack() throws InterruptedException{
         for (int i = 0; i < 30; i++) {
-            x -= 1;
+            x -= 2;
             repaint();
             Thread.sleep(1);
         }

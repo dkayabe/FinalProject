@@ -26,7 +26,7 @@ public class NuclearAirStrike extends JComponent
     /**
      * Constructor for objects of class NuclearStrike
      */
-    public NuclearAirStrike()
+    public NuclearAirStrike(int x, int y)
     {
         // initialise instance variables
         this.x = x;
@@ -43,12 +43,12 @@ public class NuclearAirStrike extends JComponent
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
-        g.drawImage(rocketdown, x, y, 300, 50, this);
+        g.drawImage(rocketdown, x, y, 50, 300, this);
     }
     
     public void attack() throws InterruptedException{
         for (int i = 0; i < 30; i++) {
-            y += 5;
+            y += 1;
             repaint();
             Thread.sleep(1);
         }
