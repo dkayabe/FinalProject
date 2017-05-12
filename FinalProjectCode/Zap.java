@@ -34,16 +34,21 @@ public class Zap extends JComponent
     private int x;
     private int y;
     private BufferedImage zap;
+    private int oldx;
+    private int oldy;
+    private int count = 1;
   
   
     
-   
+   //
     
 
     public Zap(int X, int Y)
     {
         x = X;
         y = Y;
+        oldx = X;
+        oldy = Y;
         try{
         zap = (ImageIO.read(new File("Images/Zap.png")));
        }
@@ -56,19 +61,35 @@ public class Zap extends JComponent
     
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
-        g.drawImage(zap, x, y, 250, 200, this);
+        g.drawImage(zap, x, y, 50, 150, this);
         
     }
     
    
-    public void MoveToEnemy(int EnemyX, int EnemyY)
+    public void Attack(int EnemyX, int EnemyY)
     {
-        x += (int)((EnemyX-x)/10)  ;
-        y += (int)((EnemyY-y)/10) ;
+        x = EnemyX - 20;
+        y += 5;
+        if (EnemyY - 150 <= y){
+            y+= 1000;
+        }
+        count++;
+        if (count %20 == 0){
+            y += 1000;
+            
+        }
+        
+        
+      
         repaint();
     }
     
-   
+    public void Remove(){
+        x = 200;
+        y = 200;
+        repaint();
+        
+    }
     
    
     
