@@ -30,7 +30,8 @@ public class Viewer
         //bullets
         Fireball f1;
         RocketBurst r1;
-        NuclearAirStrike n1 = new NuclearAirStrike(150,-50);
+        NuclearAirStrike n1 = new NuclearAirStrike(150,-150);
+        LaserBlast lb = new LaserBlast(100 + 125,100 - 70);
         
         ChiefPat c1 = new ChiefPat(390,220);
         
@@ -84,6 +85,18 @@ public class Viewer
             Thread.sleep(50);
             frame.setVisible(true);
         }
+        
+        //cotton's turn
+        frame.add(lb);
+        frame.setVisible(true);
+        Thread.sleep(3000);
+        for (int i = 0; i < 30; i++) {
+            lb.adjustSize();
+            Thread.sleep(1);
+            frame.setVisible(true);
+        }
+
+        
         
         //goes back
         for( int i = 0; i < ANIMATION_TIME_IN_SECONDS; i++ )

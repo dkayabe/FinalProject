@@ -50,7 +50,7 @@ public class AutonomousCotton extends JComponent
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
-        g.drawImage(img, x, y, 120, 77, this);
+        g.drawImage(img, x, y, 240, 154, this);
         
     }
     
