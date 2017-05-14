@@ -16,7 +16,7 @@ import javax.swing.JPanel;
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Incineration extends JComponent
+public class BestieBlast extends JComponent
 {
     /** description of instance variable x (add comment for each instance variable) */
     private int x;
@@ -24,18 +24,20 @@ public class Incineration extends JComponent
     private int width;
     private int height;
     
-    private BufferedImage beam;
+    private BufferedImage img;
     /**
      * Default constructor for objects of class LaserBlast
      */
-    public Incineration(int x, int y)
+    public BestieBlast(int x, int y)
     {
-        this.x = x;
-        this.y = y;
         width = 800;
         height = 300;
+        
+        this.x = x - (width / 2);
+        this.y = y;
+        
         try {
-            beam = ImageIO.read(new File("Images/incinerator.png"));
+            img = ImageIO.read(new File("Images/incineration.png"));
         }
         catch (IOException e) {
             
@@ -45,8 +47,8 @@ public class Incineration extends JComponent
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
-        g.drawImage(beam, x, y, width, height, this);
-        System.out.println("It went through");
+        g.drawImage(img, x, y, width, height, this);
+        System.out.println("pew");
     }
     
     

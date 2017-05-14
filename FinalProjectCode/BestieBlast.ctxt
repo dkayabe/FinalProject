@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.params=x\ y
-comment0.target=Incineration(int,\ int)
+comment0.target=BestieBlast(int,\ int)
 comment0.text=\r\n\ Default\ constructor\ for\ objects\ of\ class\ LaserBlast\r\n
 comment1.params=g
 comment1.target=void\ paintComponent(java.awt.Graphics)

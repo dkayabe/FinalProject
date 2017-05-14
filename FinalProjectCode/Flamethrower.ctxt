@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.params=x\ y
-comment0.target=RocketBurst(int,\ int)
+comment0.target=Flamethrower(int,\ int)
 comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ RocketBurst\r\n
 comment1.params=g
 comment1.target=void\ paintComponent(java.awt.Graphics)

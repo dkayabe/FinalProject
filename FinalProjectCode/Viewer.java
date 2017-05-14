@@ -29,10 +29,10 @@ public class Viewer
         
         //bullets
         Fireball f1;
-        RocketBurst r1;
-
+        Flamethrower r1;
+        BestieBlast b1;
         LaserBlast lb = new LaserBlast(100 + 125,100 - 70);
-        Incineration i1 = new Incineration(225, 30);
+
         
 
         
@@ -70,27 +70,30 @@ public class Viewer
         }
         Thread.sleep(2000);
         
-        r1 = new RocketBurst(updateX + 100, updateY + 75);
+        r1 = new Flamethrower(updateX - 100, updateY + 75);
         frame.add(r1);
+        frame.setVisible(true);
+        Thread.sleep(1000);
         for (int i = 0; i < 30; i++) {
             r1.attack();
-            Thread.sleep(50);
+            Thread.sleep(1);
             frame.setVisible(true);
         }
         
         Thread.sleep(2000);
         
-        
-        frame.add(i1);
-        i1.setVisible(true);
-        Thread.sleep(5000);
-        /*
+        b1 = new BestieBlast(updateX, updateY - 25);
+        frame.add(b1);
+        frame.setVisible(true);
+        Thread.sleep(2000);
         for (int i = 0; i < 30; i++) {
-            i1.adjustSize();
+            b1.adjustSize();
             Thread.sleep(1);
             frame.setVisible(true);
         }
-        */
+        
+        Thread.sleep(5000);
+        
         
         //cotton's turn
         frame.add(lb);

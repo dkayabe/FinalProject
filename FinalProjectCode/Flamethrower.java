@@ -16,23 +16,27 @@ import javax.swing.JPanel;
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class RocketBurst extends JComponent
+public class Flamethrower extends JComponent
 {
     // instance variables - replace the example below with your own
     private int x;
     private int y;
+    private int width;
+    private int height;
     
     private BufferedImage rocketleft;
     /**
      * Constructor for objects of class RocketBurst
      */
-    public RocketBurst(int x, int y)
+    public Flamethrower(int x, int y)
     {
         this.x = x;
         this.y = y;
         
+        width = 550;
+        height = 100;
         try {
-            rocketleft = ImageIO.read(new File("Images/rocketleft.png"));
+            rocketleft = ImageIO.read(new File("Images/flamethrower.png"));
         }
         catch (IOException e) {
             
@@ -42,17 +46,23 @@ public class RocketBurst extends JComponent
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
-        g.drawImage(rocketleft, x, y, 300, 50, this);
+        g.drawImage(rocketleft, x, y, width, height, this);
     }
     
     public void attack() throws InterruptedException{
         for (int i = 0; i < 30; i++) {
-            x -= 1;
-            repaint();
-            Thread.sleep(1);
+            if (width > 0) {
+                width -= 1;
+                height -= 2;
+                y += 1;
+                repaint();
+                Thread.sleep(1);
+            }
         }
         repaint();
         Thread.sleep(10);
         
     }
+    
+    
 }
