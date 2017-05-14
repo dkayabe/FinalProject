@@ -16,7 +16,7 @@ import javax.swing.JPanel;
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class LaserBlast extends JComponent
+public class Incineration extends JComponent
 {
     /** description of instance variable x (add comment for each instance variable) */
     private int x;
@@ -24,18 +24,18 @@ public class LaserBlast extends JComponent
     private int width;
     private int height;
     
-    private BufferedImage laser;
+    private BufferedImage beam;
     /**
      * Default constructor for objects of class LaserBlast
      */
-    public LaserBlast(int x, int y)
+    public Incineration(int x, int y)
     {
         this.x = x;
         this.y = y;
         width = 800;
         height = 300;
         try {
-            laser = ImageIO.read(new File("Images/laserblast.png"));
+            beam = ImageIO.read(new File("Images/incinerator.png"));
         }
         catch (IOException e) {
             
@@ -45,8 +45,8 @@ public class LaserBlast extends JComponent
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
-        g.drawImage(laser, x, y, width, height, this);
-        System.out.println("pew");
+        g.drawImage(beam, x, y, width, height, this);
+        System.out.println("It went through");
     }
     
     
