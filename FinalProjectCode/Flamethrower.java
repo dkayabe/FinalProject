@@ -21,10 +21,19 @@ public class Flamethrower extends JComponent
     // instance variables - replace the example below with your own
     private int x;
     private int y;
+    
+    private int origX;
+    private int origY;
+    
+    private int origWidth;
+    private int origHeight;
+    
     private int width;
     private int height;
     
     private BufferedImage rocketleft;
+    
+
     /**
      * Constructor for objects of class RocketBurst
      */
@@ -32,9 +41,13 @@ public class Flamethrower extends JComponent
     {
         this.x = x;
         this.y = y;
+        origX = x;
+        origY = y;
         
         width = 550;
         height = 100;
+        origWidth = 550;
+        origHeight = 100;
         try {
             rocketleft = ImageIO.read(new File("Images/flamethrower.png"));
         }
@@ -59,10 +72,15 @@ public class Flamethrower extends JComponent
                 Thread.sleep(1);
             }
         }
-        repaint();
-        Thread.sleep(10);
+
+
         
     }
     
-    
+    public void reset() {
+        x = origX;
+        y = origY;
+        width = origWidth;
+        height = origHeight;
+    }
 }

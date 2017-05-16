@@ -61,7 +61,7 @@ public class Viewer
         
         
         //bullets
-        f1 = new Fireball(updateX + 100, updateY + 75);
+        f1 = new Fireball(updateX + 100, updateY + 100);
         frame.add(f1);
         for (int i = 0; i < 30; i++) {
             f1.attack();
@@ -77,7 +77,7 @@ public class Viewer
         for (int i = 0; i < 30; i++) {
             r1.attack();
             Thread.sleep(1);
-            frame.setVisible(true);
+            //frame.setVisible(true);
         }
         
         Thread.sleep(2000);
