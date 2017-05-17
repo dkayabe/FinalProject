@@ -84,12 +84,12 @@ public class Heal extends JComponent
         }
         
        if (h > 0){
-           g.drawImage(heal, x + 140 , y + 20, w, h, this);
-        g.drawImage(heal, x + 160, y + 90 , w, h, this);
-        g.drawImage(heal, x + 90, y + 100, w, h, this);
-        g.drawImage(heal, x + 120 , y + 160, w, h, this);
-        g.drawImage(heal, x + 100, y + 120 , w, h, this);
-        g.drawImage(heal, x + 200, y + 10, w, h, this);
+           g.drawImage(heal, x + 10 , y + 20, w, h, this);
+        g.drawImage(heal, x + 60, y + 90 , w, h, this);
+        g.drawImage(heal, x + 30, y + 100, w, h, this);
+        g.drawImage(heal, x + 50 , y + 160, w, h, this);
+        g.drawImage(heal, x , y + 120 , w, h, this);
+        g.drawImage(heal, x + 20, y + 10, w, h, this);
        }
        
     }
@@ -97,7 +97,7 @@ public class Heal extends JComponent
    
     public void reset(int EnemyX, int EnemyY)
     {
-        x = EnemyX + 40;
+        x = EnemyX ;
         y = EnemyY;
         
         count = 0;

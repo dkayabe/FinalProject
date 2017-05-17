@@ -25,12 +25,8 @@ public class ChiefPatTesting
         Zap z1 = new Zap(200,0);
         frame.add(z1);
         frame.setVisible(true);
-        Poison p1 = new Poison(200,0);
-        frame.add(p1);
-        frame.setVisible(true);
-        Heal h1 = new Heal(200,0);
-        frame.add(h1);
-        frame.setVisible(true);
+       
+      
         frame.add(c1);
         frame.setVisible(true);
         AutonomousCotton ct1 = new AutonomousCotton(100,200);
@@ -50,8 +46,35 @@ public class ChiefPatTesting
             
         }
         Thread.sleep(500);
-        
+        Poison p1 = new Poison(100, 200);
+        frame.add(p1);
+        frame.setVisible(true);
+        for( int i = 1; i < ANIMATION_TIME_IN_SECONDS; i++ )
+        {
 
+            
+            p1.Attack();
+            
+         
+            Thread.sleep(50);
+            frame.setVisible(true);
+            
+        }
+        Thread.sleep(500);
+        Heal h1 = new Heal(c1.getX(), c1.getY());
+        frame.add(h1);
+        frame.setVisible(true);
+        for( int i = 1; i < ANIMATION_TIME_IN_SECONDS; i++ )
+        {
+
+            
+            h1.Attack();
+            
+         
+            Thread.sleep(50);
+            frame.setVisible(true);
+            
+        }
 
 
     }
