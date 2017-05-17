@@ -50,29 +50,7 @@ public class ChiefPatTesting
             
         }
         Thread.sleep(500);
-         for( int i = 1; i < ANIMATION_TIME_IN_SECONDS; i++ )
-        {
-
-            c1.MoveToEnemy(0, 0);
-            p1.Attack();
-            
-         
-            Thread.sleep(50);
-            frame.setVisible(true);
-            
-        }
-        Thread.sleep(500);
-        for( int i = 1; i < ANIMATION_TIME_IN_SECONDS; i++ )
-        {
-
-            c1.MoveToEnemy(0, 0);
-            h1.Attack();
-            
-         
-            Thread.sleep(50);
-            frame.setVisible(true);
-            
-        }
+        
 
 
 
