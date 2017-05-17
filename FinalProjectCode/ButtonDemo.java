@@ -56,18 +56,18 @@ public class ButtonDemo extends JPanel
         ImageIcon middleButtonIcon = createImageIcon("images/middle.gif");
         ImageIcon rightButtonIcon = createImageIcon("images/left.gif");
 
-        b1 = new JButton("Disable middle button", leftButtonIcon);
+        b1 = new JButton("Instructions", leftButtonIcon);
         b1.setVerticalTextPosition(AbstractButton.CENTER);
         b1.setHorizontalTextPosition(AbstractButton.LEADING); //aka LEFT, for left-to-right locales
         b1.setMnemonic(KeyEvent.VK_D);
         b1.setActionCommand("disable");
 
-        b2 = new JButton("Middle button", middleButtonIcon);
+        b2 = new JButton("Play Game", middleButtonIcon);
         b2.setVerticalTextPosition(AbstractButton.BOTTOM);
         b2.setHorizontalTextPosition(AbstractButton.CENTER);
         b2.setMnemonic(KeyEvent.VK_M);
 
-        b3 = new JButton("Enable middle button", rightButtonIcon);
+        b3 = new JButton("Exit Game", rightButtonIcon);
         //Use the default text position of CENTER, TRAILING (RIGHT).
         b3.setMnemonic(KeyEvent.VK_E);
         b3.setActionCommand("enable");
