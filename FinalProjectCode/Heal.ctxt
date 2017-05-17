@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.params=X\ Y
-comment0.target=Poison(int,\ int)
+comment0.target=Heal(int,\ int)
 comment1.params=g
 comment1.target=void\ paintComponent(java.awt.Graphics)
 comment2.params=EnemyX\ EnemyY

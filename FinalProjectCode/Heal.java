@@ -26,7 +26,7 @@ import javax.swing.UnsupportedLookAndFeelException;
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Poison extends JComponent
+public class Heal extends JComponent
 {
    
  
@@ -34,7 +34,7 @@ public class Poison extends JComponent
     private int x;
     private int y;
  
-    private BufferedImage poison;
+    private BufferedImage heal;
     private int oldx;
     private int oldy;
    
@@ -48,14 +48,14 @@ public class Poison extends JComponent
    //
     
 
-    public Poison(int X, int Y)
+    public Heal(int X, int Y)
     {
         x = X;
         y = Y;
         oldx = X;
         oldy = Y;
         try{
-        poison = (ImageIO.read(new File("Images/Poison.png")));
+        heal = (ImageIO.read(new File("Images/Heal.png")));
        }
        catch (IOException e) {
             
@@ -84,12 +84,12 @@ public class Poison extends JComponent
         }
         
        if (h > 0){
-           g.drawImage(poison, x + 100 , y + 20, w, h, this);
-        g.drawImage(poison, x + 120, y + 90 , w, h, this);
-        g.drawImage(poison, x + 50, y + 100, w, h, this);
-        g.drawImage(poison, x + 80 , y + 160, w, h, this);
-        g.drawImage(poison, x + 60, y + 120 , w, h, this);
-        g.drawImage(poison, x + 150, y + 10, w, h, this);
+           g.drawImage(heal, x + 140 , y + 20, w, h, this);
+        g.drawImage(heal, x + 160, y + 90 , w, h, this);
+        g.drawImage(heal, x + 90, y + 100, w, h, this);
+        g.drawImage(heal, x + 120 , y + 160, w, h, this);
+        g.drawImage(heal, x + 100, y + 120 , w, h, this);
+        g.drawImage(heal, x + 200, y + 10, w, h, this);
        }
        
     }
@@ -97,7 +97,7 @@ public class Poison extends JComponent
    
     public void reset(int EnemyX, int EnemyY)
     {
-        x = EnemyX;
+        x = EnemyX + 40;
         y = EnemyY;
         
         count = 0;
