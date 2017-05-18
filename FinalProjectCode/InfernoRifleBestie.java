@@ -92,8 +92,8 @@ public class InfernoRifleBestie extends JComponent
         repaint();
     }
     
-    public void takeDamage(int incDmg) {
-        hp -= incDmg;
+    public void setHealth(int hpCount) {
+        hp += hpCount;
     }
     
     
