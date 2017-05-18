@@ -115,39 +115,22 @@ target13.type=ClassTarget
 target13.typeParameters=
 target13.width=130
 target13.x=380
-<<<<<<< HEAD
-target13.y=520
-target14.editor.height=788
-target14.editor.width=976
-target14.editor.x=952
-target14.editor.y=0
-=======
 target13.y=190
 target14.editor.height=700
 target14.editor.width=900
 target14.editor.x=32
 target14.editor.y=12
->>>>>>> origin/master
 target14.height=50
 target14.name=TheGame
 target14.showInterface=false
 target14.type=ClassTarget
 target14.typeParameters=
-<<<<<<< HEAD
-target14.width=90
-target14.x=420
-target14.y=430
-target15.editor.height=700
-target15.editor.width=900
-target15.editor.x=0
-=======
 target14.width=80
 target14.x=900
 target14.y=150
 target15.editor.height=784
 target15.editor.width=976
 target15.editor.x=952
->>>>>>> origin/master
 target15.editor.y=0
 target15.height=50
 target15.name=LaserBlast
@@ -180,28 +163,17 @@ target17.x=290
 target17.y=240
 target18.editor.height=700
 target18.editor.width=900
-<<<<<<< HEAD
-target18.editor.x=420
-target18.editor.y=131
-=======
 target18.editor.x=0
 target18.editor.y=0
->>>>>>> origin/master
 target18.height=50
 target18.name=lukeskywalker
 target18.naviview.expanded=true
 target18.showInterface=false
 target18.type=ClassTarget
 target18.typeParameters=
-<<<<<<< HEAD
-target18.width=90
-target18.x=120
-target18.y=440
-=======
 target18.width=110
 target18.x=450
 target18.y=0
->>>>>>> origin/master
 target19.editor.height=700
 target19.editor.width=900
 target19.editor.x=31
@@ -213,8 +185,8 @@ target19.showInterface=false
 target19.type=ClassTarget
 target19.typeParameters=
 target19.width=90
-target19.x=170
-target19.y=350
+target19.x=140
+target19.y=430
 target2.editor.height=778
 target2.editor.width=900
 target2.editor.x=372
