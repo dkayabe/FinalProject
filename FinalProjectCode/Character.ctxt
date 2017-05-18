@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=
+comment0.target=int\ getHealth()
+comment1.params=hpCount
+comment1.target=void\ setHealth(int)
+comment2.params=
+comment2.target=int\ getDamage()
+comment3.params=
+comment3.target=void\ attack()
+comment4.params=
+comment4.target=void\ reset()
+numComments=5

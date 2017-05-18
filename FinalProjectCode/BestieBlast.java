@@ -16,13 +16,18 @@ import javax.swing.JPanel;
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class BestieBlast extends JComponent
+public class BestieBlast extends JComponent implements Move
 {
     /** description of instance variable x (add comment for each instance variable) */
     private int x;
     private int y;
     private int width;
     private int height;
+    
+    private int origX;
+    private int origY;
+    private int origWidth;
+    private int origHeight;
     
     private BufferedImage img;
     /**
@@ -35,6 +40,8 @@ public class BestieBlast extends JComponent
         
         this.x = x - (width / 2);
         this.y = y;
+        origX = x - (width / 2);
+        origY = y;
         
         try {
             img = ImageIO.read(new File("Images/incineration.png"));
@@ -44,6 +51,14 @@ public class BestieBlast extends JComponent
         }
     }
 
+    public int getX() {
+        return x;
+    }
+    
+    public int getY() {
+        return y;
+    }
+    
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
@@ -51,9 +66,7 @@ public class BestieBlast extends JComponent
         System.out.println("pew");
     }
     
-    
-    
-    public void adjustSize() throws InterruptedException{
+    public void attack() throws InterruptedException{
         for (int i = 0; i < 30; i++) {
             if (height > 1) {
                 height -= 2;
@@ -63,5 +76,9 @@ public class BestieBlast extends JComponent
             }
         }
         repaint();
+    }
+    
+    public void reset() {
+        
     }
 }

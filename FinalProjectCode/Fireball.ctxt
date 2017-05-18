@@ -2,8 +2,12 @@
 comment0.params=x\ y
 comment0.target=Fireball(int,\ int)
 comment0.text=\r\n\ Default\ constructor\ for\ objects\ of\ class\ Fireball\r\n
-comment1.params=g
-comment1.target=void\ paintComponent(java.awt.Graphics)
+comment1.params=
+comment1.target=int\ getX()
 comment2.params=
-comment2.target=void\ attack()
-numComments=3
+comment2.target=int\ getY()
+comment3.params=g
+comment3.target=void\ paintComponent(java.awt.Graphics)
+comment4.params=
+comment4.target=void\ attack()
+numComments=5

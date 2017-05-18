@@ -38,7 +38,15 @@ public class Fireball extends JComponent
             
         }
     }
-
+    
+    public int getX() {
+        return x;
+    }
+    
+    public int getY() {
+        return y;
+    }
+    
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
