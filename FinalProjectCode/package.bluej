@@ -17,9 +17,27 @@ dependency13.type=UsesDependency
 dependency14.from=skywalker_viewer
 dependency14.to=death_star
 dependency14.type=UsesDependency
+<<<<<<< HEAD
 dependency15.from=ButtonLocationDemo
 dependency15.to=lukeskywalker
 dependency15.type=UsesDependency
+=======
+<<<<<<< HEAD
+dependency15.from=TheGame
+dependency15.to=AutonomousCotton
+dependency15.type=UsesDependency
+dependency16.from=TheGame
+dependency16.to=InfernoRifleBestie
+dependency16.type=UsesDependency
+dependency17.from=TheGame
+dependency17.to=ChiefPat
+dependency17.type=UsesDependency
+dependency18.from=TheGame
+dependency18.to=lukeskywalker
+dependency18.type=UsesDependency
+=======
+>>>>>>> 5d25615da751c8d8e6b54eae25079c765ab27895
+>>>>>>> origin/master
 dependency2.from=Viewer
 dependency2.to=AutonomousCotton
 dependency2.type=UsesDependency
@@ -48,10 +66,24 @@ objectbench.height=76
 objectbench.width=1346
 package.editor.height=572
 package.editor.width=1248
+<<<<<<< HEAD
 package.editor.x=-8
 package.editor.y=-8
 package.numDependencies=15
 package.numTargets=23
+=======
+<<<<<<< HEAD
+package.editor.x=-8
+package.editor.y=-8
+package.numDependencies=18
+package.numTargets=22
+=======
+package.editor.x=-7
+package.editor.y=26
+package.numDependencies=14
+package.numTargets=24
+>>>>>>> 5d25615da751c8d8e6b54eae25079c765ab27895
+>>>>>>> origin/master
 package.showExtends=true
 package.showUses=true
 project.charset=windows-1252
@@ -61,17 +93,32 @@ target1.editor.x=372
 target1.editor.y=34
 target1.height=50
 target1.name=death_star
+<<<<<<< HEAD
+=======
 target1.naviview.expanded=true
+>>>>>>> 5d25615da751c8d8e6b54eae25079c765ab27895
 target1.showInterface=false
 target1.type=ClassTarget
 target1.typeParameters=
 target1.width=90
 target1.x=970
 target1.y=40
+<<<<<<< HEAD
+target10.editor.height=744
+target10.editor.width=1382
+target10.editor.x=-8
+target10.editor.y=-8
+=======
 target10.editor.height=700
 target10.editor.width=900
+<<<<<<< HEAD
 target10.editor.x=32
 target10.editor.y=12
+=======
+target10.editor.x=33
+target10.editor.y=46
+>>>>>>> 5d25615da751c8d8e6b54eae25079c765ab27895
+>>>>>>> origin/master
 target10.height=50
 target10.name=TheGame
 target10.naviview.expanded=true
@@ -79,12 +126,30 @@ target10.showInterface=false
 target10.type=ClassTarget
 target10.typeParameters=
 target10.width=80
+<<<<<<< HEAD
 target10.x=900
 target10.y=150
 target11.editor.height=784
 target11.editor.width=976
 target11.editor.x=293
 target11.editor.y=97
+=======
+<<<<<<< HEAD
+target10.x=510
+target10.y=430
+target11.editor.height=784
+target11.editor.width=976
+target11.editor.x=-8
+target11.editor.y=0
+=======
+target10.x=100
+target10.y=30
+target11.editor.height=700
+target11.editor.width=900
+target11.editor.x=32
+target11.editor.y=12
+>>>>>>> 5d25615da751c8d8e6b54eae25079c765ab27895
+>>>>>>> origin/master
 target11.height=50
 target11.name=LaserBlast
 target11.naviview.expanded=true
@@ -122,14 +187,25 @@ target13.x=810
 target13.y=20
 target14.editor.height=700
 target14.editor.width=900
+<<<<<<< HEAD
 target14.editor.x=183
 target14.editor.y=72
+=======
+<<<<<<< HEAD
+target14.editor.x=183
+target14.editor.y=72
+=======
+target14.editor.x=0
+target14.editor.y=0
+>>>>>>> 5d25615da751c8d8e6b54eae25079c765ab27895
+>>>>>>> origin/master
 target14.height=50
 target14.name=ChiefPat
 target14.naviview.expanded=true
 target14.showInterface=false
 target14.type=ClassTarget
 target14.typeParameters=
+<<<<<<< HEAD
 target14.width=80
 target14.x=660
 target14.y=110
@@ -137,6 +213,25 @@ target15.editor.height=778
 target15.editor.width=900
 target15.editor.x=372
 target15.editor.y=34
+=======
+<<<<<<< HEAD
+target14.width=130
+target14.x=380
+target14.y=190
+target15.editor.height=728
+target15.editor.width=683
+target15.editor.x=683
+target15.editor.y=0
+=======
+target14.width=110
+target14.x=810
+target14.y=20
+target15.editor.height=700
+target15.editor.width=900
+target15.editor.x=183
+target15.editor.y=72
+>>>>>>> 5d25615da751c8d8e6b54eae25079c765ab27895
+>>>>>>> origin/master
 target15.height=50
 target15.name=ChiefPatTesting
 target15.naviview.expanded=true
@@ -169,6 +264,7 @@ target17.naviview.expanded=true
 target17.showInterface=false
 target17.type=ClassTarget
 target17.typeParameters=
+<<<<<<< HEAD
 target17.width=90
 target17.x=290
 target17.y=500
@@ -176,14 +272,42 @@ target18.editor.height=744
 target18.editor.width=1382
 target18.editor.x=-8
 target18.editor.y=-8
+=======
+target17.width=80
+<<<<<<< HEAD
+target17.x=110
+target17.y=240
+target18.editor.height=700
+target18.editor.width=900
+target18.editor.x=0
+target18.editor.y=0
+=======
+target17.x=190
+target17.y=30
+target18.editor.height=700
+target18.editor.width=900
+target18.editor.x=33
+target18.editor.y=46
+>>>>>>> 5d25615da751c8d8e6b54eae25079c765ab27895
+>>>>>>> origin/master
 target18.height=50
 target18.name=Heal
 target18.showInterface=false
 target18.type=ClassTarget
 target18.typeParameters=
 target18.width=80
+<<<<<<< HEAD
 target18.x=880
 target18.y=240
+=======
+<<<<<<< HEAD
+target18.x=290
+target18.y=240
+=======
+target18.x=260
+target18.y=410
+>>>>>>> 5d25615da751c8d8e6b54eae25079c765ab27895
+>>>>>>> origin/master
 target19.editor.height=700
 target19.editor.width=900
 target19.editor.x=32
@@ -194,9 +318,21 @@ target19.naviview.expanded=true
 target19.showInterface=false
 target19.type=ClassTarget
 target19.typeParameters=
+<<<<<<< HEAD
 target19.width=140
 target19.x=320
 target19.y=30
+=======
+<<<<<<< HEAD
+target19.width=110
+target19.x=810
+target19.y=20
+=======
+target19.width=90
+target19.x=290
+target19.y=500
+>>>>>>> 5d25615da751c8d8e6b54eae25079c765ab27895
+>>>>>>> origin/master
 target2.editor.height=1038
 target2.editor.width=976
 target2.editor.x=952
@@ -210,19 +346,45 @@ target2.typeParameters=
 target2.width=120
 target2.x=40
 target2.y=100
+<<<<<<< HEAD
 target20.editor.height=700
 target20.editor.width=900
 target20.editor.x=183
 target20.editor.y=72
+=======
+<<<<<<< HEAD
+target20.editor.height=700
+target20.editor.width=900
+target20.editor.x=31
+target20.editor.y=11
+=======
+target20.editor.height=744
+target20.editor.width=1382
+target20.editor.x=-8
+target20.editor.y=-8
+>>>>>>> 5d25615da751c8d8e6b54eae25079c765ab27895
+>>>>>>> origin/master
 target20.height=50
 target20.name=AutonomousCotton
 target20.naviview.expanded=true
 target20.showInterface=false
 target20.type=ClassTarget
 target20.typeParameters=
+<<<<<<< HEAD
 target20.width=130
 target20.x=930
 target20.y=490
+=======
+<<<<<<< HEAD
+target20.width=90
+target20.x=90
+target20.y=440
+=======
+target20.width=80
+target20.x=880
+target20.y=240
+>>>>>>> 5d25615da751c8d8e6b54eae25079c765ab27895
+>>>>>>> origin/master
 target21.editor.height=700
 target21.editor.width=900
 target21.editor.x=31
@@ -232,13 +394,29 @@ target21.name=Poison
 target21.showInterface=false
 target21.type=ClassTarget
 target21.typeParameters=
+<<<<<<< HEAD
 target21.width=80
 target21.x=810
 target21.y=180
+=======
+<<<<<<< HEAD
+target21.width=80
+target21.x=630
+target21.y=130
+target22.editor.height=700
+target22.editor.width=900
+target22.editor.x=32
+target22.editor.y=12
+=======
+target21.width=130
+target21.x=930
+target21.y=490
+>>>>>>> origin/master
 target22.editor.height=700
 target22.editor.width=900
 target22.editor.x=31
 target22.editor.y=11
+>>>>>>> 5d25615da751c8d8e6b54eae25079c765ab27895
 target22.height=50
 target22.name=ButtonDemo
 target22.naviview.expanded=true
@@ -266,9 +444,15 @@ target3.naviview.expanded=true
 target3.showInterface=false
 target3.type=ClassTarget
 target3.typeParameters=
+<<<<<<< HEAD
+target3.width=110
+target3.x=790
+target3.y=280
+=======
 target3.width=100
 target3.x=150
 target3.y=490
+>>>>>>> 5d25615da751c8d8e6b54eae25079c765ab27895
 target4.editor.height=784
 target4.editor.width=976
 target4.editor.x=-8
@@ -293,12 +477,21 @@ target5.showInterface=false
 target5.type=ClassTarget
 target5.typeParameters=
 target5.width=130
+<<<<<<< HEAD
+target5.x=330
+target5.y=390
+target6.editor.height=728
+target6.editor.width=683
+target6.editor.x=683
+target6.editor.y=0
+=======
 target5.x=620
 target5.y=20
 target6.editor.height=700
 target6.editor.width=900
 target6.editor.x=494
 target6.editor.y=22
+>>>>>>> 5d25615da751c8d8e6b54eae25079c765ab27895
 target6.height=50
 target6.name=Zap
 target6.naviview.expanded=true
