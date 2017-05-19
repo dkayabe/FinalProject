@@ -16,7 +16,7 @@ import javax.swing.JPanel;
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class BestieBlast extends JComponent implements Move
+public class BestieBlast extends JComponent
 {
     /** description of instance variable x (add comment for each instance variable) */
     private int x;
@@ -63,12 +63,12 @@ public class BestieBlast extends JComponent implements Move
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
         g.drawImage(img, x, y, width, height, this);
-        System.out.println("pew");
+
     }
     
-    public void attack() throws InterruptedException{
+    public void adjustSize() throws InterruptedException{
         for (int i = 0; i < 30; i++) {
-            if (height > 1) {
+            if (height > 0) {
                 height -= 2;
                 y += 1;
                 repaint();
