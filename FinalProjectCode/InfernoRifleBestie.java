@@ -73,7 +73,11 @@ public class InfernoRifleBestie extends JComponent
     public int getY() {
         return y;
     }
-
+    
+    public int getHP() {
+        return hp;
+    }
+    
     public BufferedImage getImage() {
         return img;
     }

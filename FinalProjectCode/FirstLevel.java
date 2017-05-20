@@ -1,11 +1,13 @@
-
+import java.util.*;
+import javax.swing.JPanel;
+import java.awt.Color;
 /**
  * This is level 1
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class FirstLevel
+public class FirstLevel extends JPanel
 {
     // instance variables - replace the example below with your own
     private int x;

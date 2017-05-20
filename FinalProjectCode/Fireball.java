@@ -47,6 +47,11 @@ public class Fireball extends JComponent
         return y;
     }
     
+    public void setCoord(int xcoord, int ycoord) {
+        x = xcoord;
+        y = ycoord;
+    }
+    
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
