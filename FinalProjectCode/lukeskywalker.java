@@ -44,6 +44,18 @@ public class lukeskywalker extends JComponent
       }
     
     }
+    
+  public void moveToEnemy2(int enemyX,int enemyY){
+      if (x < (enemyX-10)){
+          x+=7;
+          repaint();
+      }
+      if (y < enemyY){
+          y+=7;
+          repaint();
+      }
+    
+    }
   
   public void moveToEnemy(int enemyY){
       
