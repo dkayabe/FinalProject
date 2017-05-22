@@ -18,7 +18,7 @@ public class test_viewer2
         lukeskywalker  hero2 = new lukeskywalker(600,100);
         
         Fireball fire1 = new Fireball(0,0);
-        frame.add(fire1);
+        
         
         frame.add(hero);
         frame.setVisible(true);
@@ -45,7 +45,8 @@ public class test_viewer2
                     frame.setVisible(true);
                     Thread.sleep(17);
                  }
-                 fire1.setCoord(hero.getX() + 100, hero.getY());
+                 frame.add(fire1);
+                 fire1.setCoord(hero.getX() + 100, hero.getY() + 25);
                  frame.setVisible(true);
                  for (int i = 0; i < 30; i++) {
                      fire1.attack();
